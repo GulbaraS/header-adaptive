@@ -17,7 +17,7 @@ body {
 
 .header {
     min-height: 120px;
-    padding-top: 36px;
+    padding-top: 20px;
     margin: 0;
     background: white;
 }
@@ -78,6 +78,7 @@ color: gray;
     border: 2px solid black;
     border-color: black;
     border-radius: 3px;
+    display: none; 
 }
 .menu-btn span {
     width: 30px;
@@ -93,4 +94,59 @@ color: gray;
 }
 .menu-btn span:nth-of-type(3) {
     top: calc(50% + 5px);
+}
+
+/* mobile display*/
+@media screen and (max-width: 767px) {
+
+.header-logo {
+    max-width: 300px;
+    max-height: 100px;
+}    
+ .menu-btn {
+    display: block;
+    width: 65px;
+    z-index: 3; 
+    cursor: pointer;
+    position: relative;
+}
+.header-menu-link {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    align-items: center;
+    
+}
+.header-nav {
+    position: fixed;
+    top: 150px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    list-style: none;
+
+   
+}
+.header-menu-item {
+    width: 100%;
+    margin: 0;
+}
+.header-menu-item :hover {
+    color: black;
+    background-color: yellow;
+
+}
+
+
+
+
+
 }
