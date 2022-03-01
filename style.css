@@ -69,3 +69,28 @@ text-transform: uppercase;
 text-decoration: none;
 color: gray;
 }
+
+/*burger button */
+.menu-btn {
+    width: 40px;
+    height: 38px;
+    position: relative;
+    border: 2px solid black;
+    border-color: black;
+    border-radius: 3px;
+}
+.menu-btn span {
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+}
+.menu-btn span:nth-of-type(2) {
+    top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+    top: calc(50% + 5px);
+}
